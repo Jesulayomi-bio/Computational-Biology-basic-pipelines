@@ -9,7 +9,7 @@ This Python script performs a local pairwise sequence alignment between two biol
 **Prerequisites & Dependencies:** Make sure you have Biopython installed in your Python environment: *pip install biopython*
 
 🚀 **How the Code Works**
-[] Initialization (PairwiseAligner):
+[]Initialization (PairwiseAligner):
 Sets up a local alignment aligner.
 Configures scoring parameters:
   Match score: 1 (rewards matching bases)
@@ -17,11 +17,11 @@ Configures scoring parameters:
   Open gap score: -0.5 (penalty for starting a gap)
   Extend gap score: -1 (penalty for extending an existing gap)
 
-[] Sequence Extraction (SeqIO):
+[]Sequence Extraction (SeqIO):
 Parses two GenBank files (sequence (4).gb and sequence (5).gb).
 Extracts metadata (such as organism keywords/names) and the actual nucleotide/protein sequences (seq1.seq and seq2.seq).
 
-[] Alignment & Analysis:
+[]Alignment & Analysis:
 Runs aligner.align() to find the optimal local alignment between the two sequences and selects the top alignment result ([0]).
 Iterates through the aligned sequences position-by-position to count matches and mismatches.
 
