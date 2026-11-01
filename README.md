@@ -41,3 +41,36 @@ This Python script performs a local pairwise sequence alignment between two biol
 $$\text{Similarity (\%)} = \left(\frac{\text{Matches}}{\text{Total Alignment Length}}\right) \times 100$$
 
 > Prints out the **final alignment**, **match/mismatch counts**, and a **formatted similarity statement**.
+
+
+## motif search.py
+### FASTA/GenBank Parser & Nucleotide Motif Searcher
+This Python script allows users to interactively parse either a FASTA or GenBank sequence file, extract key metadata and sequence information, and search for specific nucleotide motifs using regular expressions (re).
+
+**Prerequisites & Dependencies:** Make sure you have Biopython installed in your Python environment: *pip install biopython*
+
+🚀 **How the Code Works**
+
+- [ ] User Interaction & File Loading::
+
+> Prompts the user to specify the file format (f for FASTA, g for GenBank).
+>
+> Prompts the user to provide the file path.
+>
+> Uses Biopython's SeqIO.parse() to read the file based on the user's format selection.
+
+- [ ] Metadata & Sequence Extraction:
+
+> Loops through the records in the file.
+>
+>Extracts and prints the organism's name and source from the record annotations.
+>
+>Converts the sequence into a string representation using repr().
+
+- [ ] Motif Searching:
+
+> Prompts the user to enter a nucleotide motif (regular expression pattern).
+
+> Uses Python's *re.search()* to scan the sequence for the target motif.
+
+> If found, it prints confirmation and displays the start and end character positions (*m.start()* and *m.end()*). If not found, it reports that the motif is absent.
