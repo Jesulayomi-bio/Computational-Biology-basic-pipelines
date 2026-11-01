@@ -17,7 +17,9 @@ This Python script performs a local pairwise sequence alignment between two biol
 > Configures scoring parameters:
 >> Match score: 1 (rewards matching bases)
 >> Mismatch score: -1 (penalizes differing bases)
+>> 
 >> Open gap score: -0.5 (penalty for starting a gap)
+>> 
 >> Extend gap score: -1 (penalty for extending an existing gap)
 
 - [ ] Sequence Extraction (SeqIO):
@@ -38,4 +40,4 @@ This Python script performs a local pairwise sequence alignment between two biol
 
 $$\text{Similarity (\%)} = \left(\frac{\text{Matches}}{\text{Total Alignment Length}}\right) \times 100$$
 
-> Prints out the final alignment, match/mismatch counts, and a formatted similarity statement.
+> Prints out the **final alignment**, **match/mismatch counts**, and a **formatted similarity statement**.
