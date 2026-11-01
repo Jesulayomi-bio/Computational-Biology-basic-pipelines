@@ -9,13 +9,13 @@ This Python script performs a local pairwise sequence alignment between two biol
 **Prerequisites & Dependencies:** Make sure you have Biopython installed in your Python environment: *pip install biopython*
 
 🚀 **How the Code Works**
-[]Initialization (PairwiseAligner):
-Sets up a local alignment aligner.
-Configures scoring parameters:
-  Match score: 1 (rewards matching bases)
-  Mismatch score: -1 (penalizes differing bases)
-  Open gap score: -0.5 (penalty for starting a gap)
-  Extend gap score: -1 (penalty for extending an existing gap)
+[ ] Initialization (PairwiseAligner):
+> Sets up a local alignment aligner.
+> Configures scoring parameters:
+>>Match score: 1 (rewards matching bases)
+>>Mismatch score: -1 (penalizes differing bases)
+>>Open gap score: -0.5 (penalty for starting a gap)
+>>Extend gap score: -1 (penalty for extending an existing gap)
 
 []Sequence Extraction (SeqIO):
 Parses two GenBank files (sequence (4).gb and sequence (5).gb).
