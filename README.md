@@ -43,6 +43,8 @@ $$\text{Similarity (\%)} = \left(\frac{\text{Matches}}{\text{Total Alignment Len
 > Prints out the **final alignment**, **match/mismatch counts**, and a **formatted similarity statement**.
 
 
+
+
 ## motif search.py
 ### FASTA/GenBank Parser & Nucleotide Motif Searcher
 This Python script allows users to interactively parse either a FASTA or GenBank sequence file, extract key metadata and sequence information, and search for specific nucleotide motifs using regular expressions (re).
